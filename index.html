@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Fragkoulis Logothetis </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<style type="text/css" media="all">
+@import "images/style.css";
+</style>
+</head>
+<body onload="startTime();">
+<div class="content">
+  <div id="header">
+    <div class="title">
+      <h1>--Try to catch the Ball-- </h1>
+      <h3>Q-Learning Algorithm</h3>
+      <h2>Author: Logothetis Fragkoulis </h2>
+      <h3> Electrical and Computer Engineer </h3>
+      <h3> Technical University of Crete </h3>
+      <h3>Email: flogothetis95@gmail.com </h3>
+
+
+    </div>
+  </div>
+  <div id="main">
+    <div class="center">
+      <h2>Description of the Game </h2>
+      <h3>Abstract</h3>
+      The target is to built a Q-Learner Agent to catch the ball.
+      The canvas contains a cicle as a ball and a rectagular as a catcher of the ball .
+      The ball is fallen down randomly between eight different poses.A Q-Learner Algorithm is built to simulate the Best-player of these Game .
+
+      <p class="date"></p>
+      <br />
+      <h2>Details</h2>
+      <h3>***************************************************</h3>
+      <img id="img1" />
+<script>
+var imgArray = new Array("images/ball.jpg","images/figure.png");
+var imgCount = 0;
+function startTime() {
+    if(imgCount == imgArray.length) {
+        imgCount = 0;
+    }
+    document.getElementById("img1").src = imgArray[imgCount];
+    imgCount++;
+    setTimeout("startTime()", 5000);
+}
+</script>
+
+      <p class="date"></p>
+      In the first above slide  is provided the GameEnvironment,
+      On the other hand the second slide is figured the Learning proccedure by a Matlab plot.
+      X-axis is how many balls are caught as the time passes and the Y-axis is how many balls are not caught.
+      It could be observed that the Learning Algorithm getting closer to the Ideal-Player after 50 missing balls
+
+      <br />
+    </div>
+    <div class="leftmenu">
+      <div class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="prefooter">
+    <div class="particles">
+      <h2>Download Files from Here:</h2>
+      <img src="images/arrow.gif" alt="" /> <a href="images/Report.pdf" download> Report.pdf <br />
+      <img src="images/arrow.gif" alt="" /> <a href="images/catch_ball.zip" download>Source Code (Python)  <br />
+      <img src="images/arrow.gif" alt="" /> <a href="https://www.github.com/flogothetis">View all my Projects on my GitHub<br />
+
+    </div>
+
+  </div>
+  <div id="footer">
+    <div class="padding"> Copyright &copy; 2018 Fragkoulis Logothetis
+</div>
+</body>
+</html>
